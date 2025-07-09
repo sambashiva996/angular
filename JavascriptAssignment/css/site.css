@@ -1,0 +1,75 @@
+
+.form-lable::before{
+    content: "* ";
+    color: red;
+}
+.form-lable{
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+}
+.form-lable-na{
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+}
+.form-validation{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.email-class{
+    padding-bottom: 10px;
+}
+.headerForm{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.input-class{ 
+display: flex;
+align-items: center;
+ margin-bottom: 10px;
+}
+
+.input-class label {
+width: 80px;
+margin-right: 10px;
+}
+
+.input-class input {
+flex: 1;
+padding: 5px;
+margin-right: 10px;
+}
+
+.input-class .error {
+white-space: nowrap;
+font-size: 0.9em;
+ }
+ .button-class{
+  text-align: center;
+ }
+.backgoround-color{
+    background-color:rgb(23, 240, 240);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+.p-backgoround-color{
+    background-color:rgb(206, 244, 244);
+}
+.p-align{
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+.custom-margin{
+    margin-bottom: 30px;
+}
+.select-class{
+    text-box: 30px;
+}
+.register-button{
+    text-align: center;
+}

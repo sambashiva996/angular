@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmln="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page!</title>
+    <link rel="stylesheet" href="styles/Layout.css">
+</head>
+
+<body>
+    <header id="mainHeader">
+        <div>
+            <a class="headerlogo" href="index.html">
+                <img src="images/logo.png" />
+            </a>
+            <span id="headername">Coffee's Shop Store</span>
+            <input type="search" id="searchbox" placeholder="Search for coffee..." />
+        </div>
+    </header>
+    <nav class="backgroundgradient">
+        <ul>
+           <li><a class="navlink" href="index.html">Home</a></li>
+           <li><a class="navlink" href="blog.html">Blog</a></li>
+           <li><a class="navlink" href="allcoffees.html">Our Coffees</a></li>
+           <li><a class="navlink" href="accesseries.html">Accessories</a></li>
+           <li><a class="navlink" href="gifts.html">Gifts</a></li>
+           <li><a class="navlink" href="findus.html">Find Us</a></li>
+           <li><a class="navlink" href="checkout.html">Checkout</a></li>
+        </ul>
+       </nav>
+    <div id="welcomeimage">
+        <img src="images/coffeewelcome.png" />
+    </div>
+    <div id="coffeeofthemonth">
+        <img src="images/coffeeofthemonth.png" />
+    </div>
+    <section class="coffeedetails">
+        <header class="blockheader">
+            <span>Checkout</span>
+        </header>
+        <form id="mainform" action="#" method="post">
+            <fieldset class="box">
+                <legend>Your Details</legend>
+                <div>
+                    <p>
+                        <label class="textlable" for="firstNameInput">First Name</label>
+                        <input type="text" id="firstNameInput" name="firstName" 
+                        placeholder="Enter your first name" class="textinput" maxlength="30" required="required"/>
+                    </p>
+                    <p>
+                        <label class="textlable" for="lstNameInput">Last Name</label>
+                        <input type="text" id="lastNameInput" name="lastName"
+                         placeholder="Enter your last name" class="textinput" size="10" maxlength="50"/>
+                    </p>
+                    <p>
+                        <label class="textlable" for="emailInput">Email</label>
+                        <input type="email" id="emailInput" name="email"
+                         placeholder="Enter your email" class="textinput" required="required"/>
+                    </p>
+                    <p>
+                        <label class="textlable" for="streetInput">Street</label>
+                        <input type="text" id="streetInput" name="street" 
+                        placeholder="Enter your street" class="textinput" />
+                    </p>
+                    <p>
+                        <label class="textlable" for="numberInput">Number</label>
+                        <input type="text" id="numberInput" name="number" 
+                        placeholder="Enter your number" class="textinput" />
+                    </p>
+                    <p>
+                        <label class="textlable" for="zipCodeInput">Zip Code</label>
+                        <input type="text" id="zipCodeInput" name="zipCode" 
+                        placeholder="Enter your zip Code" class="textinput" required="required"/>
+                    </p>
+                    <p>
+                        <label class="textlable" for="cityInput">City</label>
+                        <input type="text" id="cityInput" name="city" 
+                        placeholder="Enter your city" class="textinput" required="required"/>
+                    </p>
+                    <p>
+                        <label class="textlable" for="countryInput">Country</label>
+                        <input type="text" id="countryInput" name="country" 
+                        placeholder="Enter your country" class="textinput" pattern="[a-zA-Z]{3}"/>
+                    </p>
+                    <p>
+                        <label class="textlable" for="phoneNumberInput">Phone Number</label>
+                        <input type="text" id="phoneNumberInput" name="phoneNumber" 
+                        placeholder="Enter your phone number" class="textinput" required="required"/>
+                    </p>
+                    <p>
+                        <label class="textlable" for="blogInput">Blog</label>
+                        <input type="url" id="blogInput" name="blog" 
+                        placeholder="Enter your blog" class="textinput" />
+                    </p>
+                    <p>
+                        <label class="textlable" for="remarksInput">Remarks</label>
+                        <input type="text" id="remarksInput" name="remarks" 
+                        placeholder="Enter your remarks" class="textinput" />
+                    </p>
+                </div>
+            </fieldset>
+        <br/>
+            <fieldset class="box">
+                <legend>Your Order</legend>
+                <p>
+                    <label class="textlable" for="deleveryDateInput">Requested Delivery Date</label>
+                    <input type="date" id="deleveryDateInput" name="deleveryDate" class="textinput" />
+                </p>
+                <p>
+                    <label class="textlable" for="colorInput">Wrapping paper color</label>
+                    <input type="color" id="colorInput" name="color" class="textinput" />
+                </p>
+                <p>
+                    <label class="textlable" for="bowInput">How many bows on the package?</label>
+                    <input type="number" id="bowInput" name="bows" placeholder="Enter value between 1 and 10" class="textinput" min="1" max="10"/>
+                </p>
+            </fieldset>
+            <input type="submit" value="Place Order" class="submitbutton" />
+        </form>
+    </section>
+</body>
+
+</html>

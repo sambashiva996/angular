@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmln="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Coffee Store Shop!</title>
+    <link rel="stylesheet" href="styles/Layout.css">
+</head>
+
+<body>
+    <header id="mainHeader">
+        <div>
+            <a class="headerlogo" href="index.html">
+                <img src="images/logo.png" />
+            </a>
+            <span id="headername">Coffee's Shop Store</span>
+            <input type="search" id="searchbox" placeholder="Search for coffee..." />
+        </div>
+        <nav class="backgroundgradient">
+         <ul>
+            <li><a class="navlink" href="index.html">Home</a></li>
+            <li><a class="navlink" href="blog.html">Blog</a></li>
+            <li><a class="navlink" href="allcoffees.html">Our Coffees</a></li>
+            <li><a class="navlink" href="accesseries.html">Accessories</a></li>
+            <li><a class="navlink" href="gifts.html">Gifts</a></li>
+            <li><a class="navlink" href="findus.html">Find Us</a></li>
+            <li><a class="navlink" href="checkout.html" target="_blank">Checkout</a></li>
+         </ul>
+        </nav>
+    </header>
+    <div id="welcomeimage">
+        <img src="images/coffeewelcome.png" />
+    </div>
+    <div id="coffeeofthemonth">
+        <img src="images/coffeeofthemonth.png" />
+    </div>
+    <section id="welcometext">
+        <header class="blockheader">
+            Welcome to the Coffee Store.
+        </header>
+        <span>
+            Welcome to the Coffee Shop Project! This project is designed to showcase a simple coffee shop website with
+            HTML, CSS, and JavaScript. Explore our menu, learn about our story, and enjoy the cozy atmosphere of our
+            virtual coffee shop.This project is designed to showcase a simple coffee shop website with
+            HTML, CSS, and JavaScript. Explore our menu, learn about our story, and enjoy the cozy atmosphere of our
+            virtual coffee shop.This project is designed to showcase a simple coffee shop website with
+            HTML, CSS, and JavaScript. Explore our menu, learn about our story, and enjoy the cozy atmosphere of our
+            virtual coffee shop.
+            <p><mark>Note that our coffee store is cloded on public holidays.</mark></p>
+        </span>
+    </section>
+    <aside id="events">
+        <header>Here's what happening!</header>
+        <ul>
+            <li><a href="#">New Arabia Coffree added</a></li>
+            <li><a href="#">Store Redecorated</a></li>
+            <li><a href="#">New Website launched</a></li>
+        </ul>
+    </aside>
+    <section id="bestsellers">
+        <header>Bestseller's @ Coffee Store</header>
+        <section class="coffeebestsellers">
+            <header class="backgroundgradient">Coffees</header>
+            <article class="productarticle">
+                <figure>
+                    <img class="productarticlethumbnail" src="images/coffee1.png" />
+                </figure>
+                <header>
+                    <span class="productarticlename"><a href="coffeedetails.html">Coffee 1</a></span>
+                </header>
+                <p class="productarticlewideprice">€10</p>
+                <div class="addtocartbutton" id="addtocartbutton1">
+                    Add to Cart
+                </div>
+            </article>
+
+            <article class="productarticle">
+                <figure>
+                    <img class="productarticlethumbnail" src="images/coffee1.png" />
+                </figure>
+                <header>
+                    <span class="productarticlename"><a href="coffeedetails.html">Coffee 2</a></span>
+                </header>
+                <p class="productarticlewideprice">€10</p>
+                <div class="addtocartbutton" id="addtocartbutton1">
+                    Add to Cart
+                </div>
+            </article>
+            <article class="productarticle">
+                <figure>
+                    <img class="productarticlethumbnail" src="images/coffee1.png" />
+                </figure>
+                <header>
+                    <span class="productarticlename"><a href="coffeedetails.html">Coffee 3</a></span>
+                </header>
+                <p class="productarticlewideprice">€10</p>
+                <div class="addtocartbutton" id="addtocartbutton1">
+                    Add to Cart
+                </div>
+            </article>
+            <section class="accessoriesbestsellers">
+                <header class="backgroundgradient">
+                    Accessories
+                </header>
+                <article class="productarticle">
+                    <figure>
+                        <img class="productarticlethumbnail" src="images/coffee1.png" />
+                    </figure>
+                    <header>
+                        <span class="productarticlename">Coffee 1</span>
+                    </header>
+                    <p class="productarticlewideprice">€10</p>
+                    <div class="addtocartbutton" id="addtocartbutton1">
+                        <button type="button" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                </article>
+                <article class="productarticle">
+            </section>
+        </section>
+    </section>
+
+    <footer>
+        <p>Our address is
+        <Address> Hyderabad, India ,500084</Address>
+        </p>
+        <p class="contacttext">Contact us at <a href="mailto:abc@gmail.com">Coffee Store</a></p>
+        <p class="textxontent">All site content is copyright <a href="#">our link</a></p>
+        <p class="smalltext">This page was generated on <time>09:25:04.23</time> </p>
+    </footer>
+
+    <script src="scripts/myscript.js"></script>
+</body>
+
+</html>

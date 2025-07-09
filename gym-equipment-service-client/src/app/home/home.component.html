@@ -1,0 +1,162 @@
+<app-nav></app-nav>
+<div class="row m-4 p-4"></div>
+<div class="container mt-5">
+  <!-- <div class="card-header text-center p-4 text-success">
+    <h1>Welcome to Gym service</h1>
+  </div> -->
+  <div class="card shadow">
+    <div class="card-header text-center bg-success">
+      <h5 class="mb-0">MEMBER DETAILS</h5>
+    </div>
+    <div class="card-body">
+        <div class="input-group mb-4 mt-2 shadow-sm rounded">
+<div class="input-group input-group-sm mb-4 mt-2 shadow-sm rounded" style="max-width: 350px;">
+  <span class="input-group-text bg-success text-white">
+    <i class="bi bi-search"></i>
+  </span>
+  <input
+    type="text"
+    name="searchText"
+    [(ngModel)]="memberId"
+    placeholder="Search by Member Id"
+    class="form-control form-control-sm"
+    data-bs-toggle="tooltip"
+    title="Enter Member Id to search"
+    style="font-size: 1rem;"
+  />
+  <button class="btn btn-success btn-sm" type="button" (click)="findByMemberId()" data-bs-toggle="tooltip" title="Find the Member record">
+    Search
+  </button>
+</div>
+</div>
+
+      <div *ngIf="memberList.length > 0">
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped table-hover align-middle text-center">
+            <thead class="table-light">
+              <tr>
+                <th>Member Id</th>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Address</th>
+                <!-- <th class="text-center">Action</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let member of memberList let i = index">
+                <td>{{member.id}}</td>
+                <td>{{member.name}}</td>
+                <td>{{member.phoneNumber}}</td>
+                <td>{{member.address}}</td>
+                <!-- <td class="text-center">
+                  <button class="btn btn-outline-primary btn-sm me-2" >
+                    <i class="bi bi-pencil"></i> Edit
+                  </button>
+                  <button class="btn btn-outline-danger btn-sm" >
+                    <i class="bi bi-trash"></i> Delete
+                  </button>
+                </td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+              <div *ngIf="memberList.length === 0" class="text-center bg-danger">
+            <p class="text-muted">No Members Found.</p>
+    </div>
+    <div class="card-header text-center bg-success">
+      <h5 class="">GYM DETAILS</h5>
+    </div>
+          <div *ngIf="gymList.length > 0">
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped table-hover align-middle text-center">
+            <thead class="table-light">
+              <tr>
+                <th>Gym Id</th>
+                <th>Exercises</th>
+                <!-- <th>Phone Number</th> -->
+                <th>Address</th>
+                <!-- <th class="text-center">Action</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let gym of gymList let i = index">
+                <td>{{gym.id}}</td>
+                <td>{{gym.exercises}}</td>
+                <td>{{gym.gymAddress}}</td>
+                <!-- <td>{{member.address}}</td> -->
+                <!-- <td class="text-center">
+                  <button class="btn btn-outline-primary btn-sm me-2" >
+                    <i class="bi bi-pencil"></i> Edit
+                  </button>
+                  <button class="btn btn-outline-danger btn-sm" >
+                    <i class="bi bi-trash"></i> Delete
+                  </button>
+                </td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+              <div *ngIf="gymList.length === 0" class="text-center bg-danger">
+            <p class="text-muted">No gym found.</p>
+    </div>
+<!-- <div class="input-group mb-4 mt-2 shadow-sm rounded">
+<div class="input-group input-group-sm mb-4 mt-2 shadow-sm rounded" style="max-width: 350px;">
+  <span class="input-group-text bg-success text-white">
+    <i class="bi bi-search"></i>
+  </span>
+  <input
+    type="text"
+    name="equipmentName"
+    [(ngModel)]="equipmentName"
+    placeholder="Search by Equipment Name"
+    class="form-control form-control-sm"
+    data-bs-toggle="tooltip"
+    title="Enter Equipment Name to search"
+    style="font-size: 1rem;"
+  />
+  <button class="btn btn-success btn-sm" type="button" (click)="findByName()" data-bs-toggle="tooltip" title="Find the Member record">
+    Search
+  </button>
+</div>
+</div> -->
+    <div class="card-header text-center bg-success">
+      <h5 class="mb-0">EQUIPMENT DETAILS</h5>
+    </div>
+        <div *ngIf="equipmentList.length > 0">
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped table-hover align-middle text-center">
+            <thead class="table-light">
+              <tr>
+                <th>Equipment Id</th>
+                <th>Equipment Name</th>
+                <th>Equipment Description</th>
+                <!-- <th>Address</th> -->
+                <!-- <th class="text-center">Action</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let equipment of equipmentList let i = index">
+                <td>{{equipment.id}}</td>
+                <td>{{equipment.equipName}}</td>
+                <td>{{equipment.equipDescription}}</td>
+                <!-- <td>{{member.address}}</td> -->
+                <!-- <td class="text-center">
+                  <button class="btn btn-outline-primary btn-sm me-2" >
+                    <i class="bi bi-pencil"></i> Edit
+                  </button>
+                  <button class="btn btn-outline-danger btn-sm" >
+                    <i class="bi bi-trash"></i> Delete
+                  </button>
+                </td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+              <div *ngIf="equipmentList.length === 0" class="text-center bg-danger">
+            <p class="text-muted">No Equipments Found.</p>
+    </div>
+  </div>
+</div>

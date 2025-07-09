@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmln="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Us!</title>
+    <link rel="stylesheet" href="styles/Layout.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    <script src="scripts/geopostioning.js"></script>
+</head>
+
+<body>
+    <header id="mainHeader">
+        <div>
+            <a class="headerlogo" href="index.html">
+                <img src="images/logo.png" />
+            </a>
+            <span id="headername">Coffee's Shop Store</span>
+            <input type="search" id="searchbox" placeholder="Search for coffee..." />
+        </div>
+        <nav class="backgroundgradient">
+         <ul>
+            <li><a class="navlink" href="index.html">Home</a></li>
+            <li><a class="navlink" href="blog.html">Blog</a></li>
+            <li><a class="navlink" href="allcoffees.html">Our Coffees</a></li>
+            <li><a class="navlink" href="accesseries.html">Accessories</a></li>
+            <li><a class="navlink" href="gifts.html">Gifts</a></li>
+            <li><a class="navlink" href="findus.html">Find Us</a></li>
+            <li><a class="navlink" href="checkout.html">Checkout</a></li>
+         </ul>
+        </nav>
+    </header>
+    <div id="welcomeimage">
+        <img src="images/coffeewelcome.png" />
+    </div>
+    <div id="coffeeofthemonth">
+        <img src="images/coffeeofthemonth.png" />
+    </div>
+    <section class="maptostore">
+   <header class="blockheader">
+    <span>Come to our real-live store!</span>
+   </header>
+   <div id="map" style="height: 400px; width: 100%;"></div>
+   <div id="driving-directions"></div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", createDrivingDirectionMap, false);
+    </script>
+</body>
+
+</html>

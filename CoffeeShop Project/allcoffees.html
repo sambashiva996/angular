@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Coffees!</title>
+        <link rel="stylesheet" href="styles/Layout.css">
+        <script src="scripts/dragAndDrop.js"></script>
+        
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    </head>
+<body>
+    <header id="mainHeader">
+        <div>
+            <a class="headerlogo" href="index.html">
+                <img src="images/logo.png" />
+            </a>
+            <span id="headername">Coffee's Shop Store</span>
+            <input type="search" id="searchbox" placeholder="Search for coffee..." />
+        </div>
+        <nav class="backgroundgradient">
+         <ul>
+            <li><a class="navlink" href="index.html">Home</a></li>
+            <li><a class="navlink" href="blog.html">Blog</a></li>
+            <li><a class="navlink" href="allcoffees.html">Our Coffees</a></li>
+            <li><a class="navlink" href="accesseries.html">Accessories</a></li>
+            <li><a class="navlink" href="gifts.html">Gifts</a></li>
+            <li><a class="navlink" href="findus.html">Find Us</a></li>
+            <li><a class="navlink" href="checkout.html">Checkout</a></li>
+         </ul>
+        </nav>
+    </header>
+    <div id="welcomeimage">
+        <img src="images/coffeewelcome.png" />
+    </div>
+    <div id="coffeeofthemonth">
+        <img src="images/coffeeofthemonth.png" />
+    </div>
+<section class="allcoffees">
+    <header class="blockheader">Espresso Coffee Beans</header> 
+    <article class="productarticlewide" id="coffee-1" data-price="10.00">
+    <img id="coffee1" class="productarticlewidethumbnail" src="images/coffeeofthemonth.png" />
+    <div class="productarticlewidecontent">  
+        <header>
+            <span class="productarticlwideename">Coffee 1</span> 
+            </header>   
+            <p class="productarticlwidecription">coffee belogs to coffee store shtop</p>  
+            <p class="productarticlewideprice">€10</p> 
+    
+    </div>  
+    </article>
+    <article class="productarticlewide" id="coffee-2" data-price="10.00">
+    
+        <img id="coffee1" class="productarticlewidethumbnail" src="images/coffeeofthemonth.png" />
+     
+        <div class="productarticlewidecontent">  
+            
+            <header>
+                <span class="productarticlwideename">Coffee 2</span> 
+                </header>   
+                <p class="productarticlwidecription">coffee belogs to coffee store shtop</p>  
+                <p class="productarticlewideprice">€10</p>  
+    
+        </div>  
+        </article>
+    </section>
+        <div id="shoppingcart">
+        <header class="blockheader"><span>Shopping Cart</span>
+        </header>
+    <ul id="cart"></ul>
+</div>
+    <script>
+        document.addEventListener("DOMContentLoaded", addDragAndDropHandlers, false);
+    </script>
+</body>
+</html>
+

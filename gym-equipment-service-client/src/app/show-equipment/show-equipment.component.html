@@ -1,0 +1,49 @@
+<app-nav></app-nav>
+<!-- <app-equipment (showData)="showEquipment($event)"></app-equipment> -->
+ <div class="row m-4 p-4"></div>
+<div class="container">
+    <div class="card-header text-center bg-success m-4 p-2 text-white">
+      <h1>SHOW EQUIPMENT DETAILS</h1></div>
+  <div class="row justify-content-center mt-5 p-2">
+    <div class="col-md-8">
+      <div class="card shadow">
+        <div class="card-body">
+            <div class="mb-3">
+              <label for="id">Equipment ID</label>
+              <input
+                type="text"
+                id="id"
+                name="id"
+                [(ngModel)]="equipment.id"
+                class="form-control"
+                readonly
+              />
+            </div>
+            <div class="mb-3">
+              <label for="id">Equipment Name</label>
+              <input
+                type="text"
+                id="equipmentName"
+                name="equipmentName"
+                [(ngModel)]="equipment.equipName"
+                class="form-control"
+                readonly
+              />
+            </div>
+            <div class="mb-3">
+              <label for="id">Equipment Description</label>
+              <input
+                type="text"
+                id="equipmentDescription"
+                name="equipmentDescription"
+                required
+                [(ngModel)]="equipment.equipDescription"
+                class="form-control"
+                readonly
+              />
+            </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>

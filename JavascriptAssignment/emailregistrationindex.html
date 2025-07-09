@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demo</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="backgoround-color">
+        <h1>Email Registration Form</h1>
+        </div>
+        <form id="regiterForm">
+        <div class="row">
+        <div class="col-8">
+        <h6>Email Account Details (* is required)</h6>
+        <div class="input-class">
+        <label for="login-name" class="form-lable">
+                Choose your login name:
+            </label>
+         <input type="text" id="login-name" class="form-control"/>@gmail.com
+         <div><span id="login-name-error" class="error" style="color: red;"></span></div>
+         </div>
+         <div class="input-class">
+         <label for="password" class="form-lable">
+                Choose Password:
+            </label>
+         <input type="password" id="password" class="form-control"/>
+        <span id="password-error" class="error" style="color: red;"></span>
+         </div>
+         <div class="input-class">
+         <label for="re-password" class="form-lable">
+                Re-type Password:
+            </label>
+         <input type="password" id="re-password" class="form-control"/>
+         <span id="re-password-error" class="error" style="color: red;"></span>
+         </div>
+        </div>
+        <div class="col-4 p-align p-backgoround-color">
+        <p>Username should contain only Alphabets (a-z), numbers (0-9) and Userscore (_)  
+        </p>
+        <p>Password must be altest 6 charcters to ensure better security</p>
+        </div>
+        <div class="border custom-margin"></div>
+        </div>
+         <div class="row">
+        <div class="col-8">
+        <h6>Password Reminder Information* (All the fields are required)</h6>
+        <div class="input-class">
+        <label for="hint-question" class="form-lable">
+                Hint Question:
+            </label>
+         <select name="hintnames" id="hint-question" class="select-class w-50">
+            <option value="">Select One</option>
+            <option value="Facebook usename">Facebook username?</option>
+            <option value="Select One">Favourite food?</option>
+         </select>
+        <span id="hint-question-error" class="error" style="color: red;"></span>
+         </div>
+         <div class="input-class">
+                     <label for="create-question" class="form-lable">
+                OR Create Your Question:
+            </label>
+         <input type="text" id="create-question" class="form-control"/>
+         <span id="create-question-error" class="error" style="color: red;"></span>
+         </div>
+         <div class="input-class">
+         <label for="hint-answer" class="form-lable">
+                Hint Answer:
+            </label>
+         <input type="text" required id="hint-answer" class="form-control"/>
+         </div>
+         <div class="input-class">
+         <label for="birth-date" class="form-lable">
+                Birth Date:
+            </label>
+         <select name="month" id="month">
+            <option value="">Month</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+         </select>
+         <select name="day" id="day">
+            <option value="">Day</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+         </select>
+         <select name="year" id="year">
+            <option value="">Year</option>
+            <option>2025</option>
+            <option>2024</option>
+            <option>2023</option>
+         </select>
+         <span id="bod-error" class="error" style="color: red;"></span>
+         </div>
+         <div class="input-class">
+         <label for="country" class="form-lable">
+                Country:
+            </label>
+         <select name="country" id="country">
+          <option value="">Select conutry</option>  
+         <option value="India">India</option>
+         <option value="America">America</option>
+         </select>
+         <span id="country-error" class="error" style="color: red;"></span>
+         </div>
+         <div class="input-class">
+         <label for="city" class="form-lable">
+                City:
+            </label>
+         <select name="city" id="city">
+         <option value="">Select city</option>   
+         <option value="Hyderabad">Hyderabad</option>
+         <option value="Warangal">Warangal</option>
+         </select>   
+         <span id="city-error" class="error" style="color: red;"></span>      
+        </div>
+        </div>
+        <div class="col-4">
+        <small>Choose a Hint Question Whose Answer only you will know</small>
+        </div>
+        <div class="border custom-margin"></div>
+        </div>
+        <div class="row">
+        <div class="col-8">
+        <h6>Tell Us About YourSelf</h6>
+        <div class="input-class">
+                <label for="first-name" class="form-lable">
+                First Name:
+            </label>
+         <input type="text" id="first-name" class="form-control"/>
+        <span id="first-name-error" class="error" style="color: red;"></span>
+         <label for="last-name" class="form-lable">
+                Last Name:
+            </label>
+         <input type="text" id="last-name" class="form-control"/>
+         <span id="last-name-error" class="error" style="color: red;"></span>
+         </div>
+        <div class="input-class">
+        <label for="gender" class="form-lable-na">
+               Gender:
+            </label>
+         <select name="hintnames" id="gender" class="select-class w-20">
+            <option value="Select Gender">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+         </select>
+         </div>
+         <div class="input-class">
+        <label for="state" class="form-lable-na">
+               State:
+            </label>
+         <select name="state" id="state" class="select-class w-20">
+            <option value="Select State">Select State</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Goa">Goa</option>
+         </select>
+         </div>
+          <div class="input-class">
+        <label for="occupation" class="form-lable-na">
+               State:
+            </label>
+         <select name="occupation" id="occupation" class="select-class w-20">
+            <option value="Select State">Select Occupation</option>
+            <option value="Student">Student</option>
+            <option value="Self Employee">Self Employee</option>
+         </select>
+         </div>
+         <div class="input-class">
+                     <label for="email" class="form-lable-na">
+               Alternative Email Address:
+            </label>
+         <input type="email" id="email" class="form-control"/><small>(optional)</small>
+         </div>
+    
+        <div class="border custom-margin"></div>
+        </div>
+        </div>
+     
+        <div class="row">
+        <div class="col">
+        <h6>Tell Us Your Interests (optional)</h6>
+        <div class="row">
+            <small>
+              Based on your selection we will periodically send your information
+            </small>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+            <div><input type="checkbox" name="checkbox-list" id="checkbox-list" value="Entertainment"/>Entertainment</div>
+            <div><input type="checkbox" name="checkbox-list" id="checkbox-list" value="News"/>News</div>
+            <div><input type="checkbox" name="checkbox-list" id="checkbox-list" value="Home & Family"/>Home & Family</div>
+            <div><input type="checkbox" name="checkbox-list" id="checkbox-list" value="Health & Nutrition"/>Health & Nutrition</div>
+            <div><input type="checkbox" name="checkbox-list" id="checkbox-list" value="Bueaty & Fashion"/>Bueaty & Fashion</div>
+            <div><input type="checkbox" name="checkbox-list" id="checkbox-list" value="Sports & Games"/>Sports & Games</div>
+            <div><input type="checkbox" name="checkbox-list" id="checkbox-list" value="Travel"/>Travel</div>
+            </div>   
+            <div class="col-md-4">
+            <div><input type="checkbox" name="checkbox-list" id="checkbox-list" value="Computer & Technology"/>Computer & Technology</div>
+            <div><input type="checkbox" name="checkbox-list" id="checkbox-list" value="Careers"/>Careers</div>
+            <div><input type="checkbox" name="checkbox-list" id="checkbox-list" value="Shopping"/>Shopping</div>
+            <div><input type="checkbox" name="checkbox-list" id="checkbox-list" value="Automobiles"/>Automobiles</div>
+            <div><input type="checkbox" name="checkbox-list" id="checkbox-list" value="Investing"/>Investing</div>
+            <div><input type="checkbox" name="checkbox-list" id="checkbox-list" value="Loans"/>Loans</div>
+            </div>
+            <div class="col-md-4">
+            <div><input type="checkbox" name="checkbox-list" id="checkbox-list" value="RealEstate"/>RealEstate</div>
+            <div><input type="checkbox" name="checkbox-list" id="checkbox-list" value="CreditCard"/>CreditCard</div>
+            <div><input type="checkbox" name="checkbox-list" id="checkbox-list" value="Insurance"/>Insurance</div>
+            <div><input type="checkbox" name="checkbox-list" id="checkbox-list" value="Banking"/>Banking</div>
+            <div><input type="checkbox" name="checkbox-list" id="checkbox-list" value="Special Offers"/>Special Offers</div>  
+             </div>
+            </div>
+        <div class="border custom-margin"></div>
+        </div>
+        </div>
+        <div class="register-button">
+        <button type="button" onclick="validateRegisterForm()">Register Me</button>
+        <button type="reset">Reset</button>
+        </div>
+        </form>
+    </div>
+        <script src="js/emailregistration.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Details!</title>
+        <link rel="stylesheet" href="styles/Layout.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+        <script src="scripts/geopostioning.js"></script>
+        <script src="scripts/videoplayer.js"></script>
+    </head>
+    
+    <body>
+        <header id="mainHeader">
+            <div>
+                <a class="headerlogo" href="index.html">
+                    <img src="images/logo.png" />
+                </a>
+                <span id="headername">Coffee's Shop Store</span>
+                <input type="search" id="searchbox" placeholder="Search for coffee..." />
+            </div>
+            <nav class="backgroundgradient">
+             <ul>
+                <li><a class="navlink" href="index.html">Home</a></li>
+                <li><a class="navlink" href="blog.html">Blog</a></li>
+                <li><a class="navlink" href="allcoffees.html">Our Coffees</a></li>
+                <li><a class="navlink" href="accesseries.html">Accessories</a></li>
+                <li><a class="navlink" href="gifts.html">Gifts</a></li>
+                <li><a class="navlink" href="findus.html">Find Us</a></li>
+                <li><a class="navlink" href="checkout.html">Checkout</a></li>
+             </ul>
+            </nav>
+        </header>
+        <div id="welcomeimage">
+            <img src="images/coffeewelcome.png" />
+        </div>
+        <div id="coffeeofthemonth">
+            <img src="images/coffeeofthemonth.png" />
+        </div>
+
+<section class="coffeedetails">
+    <header class="blockheader">
+    <span>Coffee 1</span>
+    </header>
+
+    <figure class="productarticlelargefigure">
+    <img id="coffeel" class="productarticlelargeimage" src="images/coffee1.png"></img>
+    <figcaption>Coffee 1</figcaption>
+    </figure>
+
+    <div class="productarticlecontent">
+        <p class="productarticledescription">This coffee made by coffee beans with extra flavour</p>   
+        <p class="productarticleprice">€10</p>    
+        </div>
+     <div>
+        <br/>
+        <div class="videotag"><span>Click on play button below to get more info.</span></div>
+        <video width="320" height="240" class="coffeevideoplayer" id="videoplayer" poster="images/coffee1.png" autoplay="autoplay">
+        <source src="video/movie.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
+        <source src="video/movie.ogg" type='video/ogg; codecs="theora, vorbis"'/>
+        Browser not supported for video playback.
+        </video>
+        <div id="controls">
+            <div id="errorDiv" style="color: red;"></div>
+            <button id="slowerbutton">Slower</button>
+            <button id="backbutton">Rewind</button>
+            <button id="playbutton">Play</button>
+            <button id="forwardbutton">Forward</button>
+            <button id="fasterbutton">Faster</button>
+            <button id="mutebutton">Mute</button>
+            <br/> <br/> <br/>
+        </div>
+     </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", initializeVideoPlayerControls, false);
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,90 @@
+<app-nav></app-nav>
+<div class="row m-4 p-4"></div>
+<div class="container mt-3">
+    <div class="input-group input-group-sm mb-4 mt-2 shadow-sm rounded" style="max-width: 350px;">
+  <span class="input-group-text bg-success text-white">
+    <i class="bi bi-search"></i>
+  </span>
+  <input
+    type="text"
+    name="equipmentName"
+    [(ngModel)]="equipmentName"
+    placeholder="Search by Equipment Name"
+    class="form-control form-control-sm"
+    data-bs-toggle="tooltip"
+    title="Enter Equipment Name to search"
+    style="font-size: 1rem;"
+  />
+  <button class="btn btn-success btn-sm" type="button" (click)="findByName()" data-bs-toggle="tooltip" title="Find the Gym record">
+    Search
+  </button>
+</div>
+    <div *ngIf="equipGymList.length > 0">
+          <div class="card-header text-center bg-success m-4 p-2 text-white">
+        <h5 class="">GYM DETAILS</h5>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped table-hover align-middle text-center">
+            <thead class="table-light">
+              <tr class="text-center">
+                <th>Gym Id</th>
+                <th>Exercises</th>
+                <!-- <th>Phone Number</th> -->
+                <th>Address</th>
+                <!-- <th class="text-center">Action</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let gym of equipGymList let i = index" class="text-center">
+                <td>{{gym.id}}</td>
+                <td>{{gym.exercises}}</td>
+                <td>{{gym.gymAddress}}</td>
+                <!-- <td>{{member.address}}</td> -->
+                <!-- <td class="text-center">
+                  <button class="btn btn-outline-primary btn-sm me-2" >
+                    <i class="bi bi-pencil"></i> Edit
+                  </button>
+                  <button class="btn btn-outline-danger btn-sm" >
+                    <i class="bi bi-trash"></i> Delete
+                  </button>
+                </td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <div class="card-header text-center bg-success m-4 p-2 text-white ">
+      <h5 class="">EQUIPMENT CATALOG</h5>
+    </div>
+     <div *ngIf="equipmentList.length > 0">
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped table-hover align-middle text-center">
+            <thead class="table-light">
+              <tr>
+                <th>Equipment Id</th>
+                <th>Equipment Name</th>
+                <th>Equipment Description</th>
+                <!-- <th>Address</th> -->
+                <!-- <th class="text-center">Action</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let equipment of equipmentList let i = index">
+                <td>{{equipment.id}}</td>
+                <td>{{equipment.equipName}}</td>
+                <td>{{equipment.equipDescription}}</td>
+                <!-- <td>{{member.address}}</td> -->
+                <!-- <td class="text-center">
+                  <a type="button" routerLink="/show-equipment" class="btn btn-outline-primary btn-sm me-2" (click)="showEquipment(equipment)">
+                     Show
+                  </a>
+                  <button class="btn btn-outline-danger btn-sm" >
+                    <i class="bi bi-trash"></i> Delete
+                  </button>
+                </td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </div>

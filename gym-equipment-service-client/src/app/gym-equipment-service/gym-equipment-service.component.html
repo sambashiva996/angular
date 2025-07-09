@@ -1,0 +1,125 @@
+<app-nav></app-nav>
+<div class="container text-center mt-5 p-4">
+  <h1 class="text-success">{{response}}</h1>
+</div>
+<div class="container">
+    <div class="text-center"><h1>FORM DETAILS</h1></div>
+  <div class="row justify-content-center mt-5 p-2">
+    <div class="col-md-8">
+      <div class="card shadow">
+        <div class="card-body">
+          <!-- Member Data Section -->
+          <div class="card-header text-center mb-4 rounded">
+            <h5 class="mb-0">Member Data</h5>
+          </div>
+          <form #memberForm="ngForm" (ngSubmit)="saveMember()">
+            <div class="mb-3">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                [(ngModel)]="member.name"
+                class="form-control"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                id="phone-number"
+                name="phoneNumber"
+                required
+                [(ngModel)]="member.phoneNumber"
+                class="form-control"
+                placeholder="Phone Number"
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                id="address"
+                name="address"
+                [(ngModel)]="member.address"
+                class="form-control"
+                placeholder="Address"
+                rows="3"
+              ></textarea>
+            </div>
+            <!-- Gym Data Section -->
+            <div class="card-header text-center mb-4 rounded">
+              <h5 class="mb-0">Gym Data</h5>
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                id="exercises"
+                name="exercises"
+                required
+                [(ngModel)]="gym.exercises"
+                class="form-control"
+                placeholder="Exercises"
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                id="gymAddress"
+                name="gymAddress"
+                required
+                [(ngModel)]="gym.gymAddress"
+                class="form-control"
+                placeholder="Gym Address"
+              ></textarea>
+            </div>
+            <!-- Equipment Data Section -->
+            <div class="card-header text-center mb-4 rounded">
+              <h5 class="mb-0">Equipment Data</h5>
+            </div>
+            <div *ngFor="let equipment of equipmentList; let i = index" class="border rounded p-3 mb-3 bg-light">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="text"
+                    name="equipName{{i}}"
+                    required
+                    [(ngModel)]="equipment.equipName"
+                    class="form-control"
+                    placeholder="Equip Name"
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="text"
+                    name="equipDescription{{i}}"
+                    required
+                    [(ngModel)]="equipment.equipDescription"
+                    class="form-control"
+                    placeholder="Equip Description"
+                  />
+                </div>
+              </div>
+              <div class="text-end">
+                <button class="btn btn-outline-danger btn-sm" type="button" (click)="removeEquipment(i)">
+                  <i class="bi bi-trash"></i> Remove
+                </button>
+              </div>
+            </div>
+            <div class="text-center mb-3">
+              <button class="btn btn-outline-primary btn-sm" type="button" (click)="addEquipment()">
+                <i class="bi bi-plus-circle"></i> Add Equipment
+              </button>
+            </div>
+            <div class="d-grid">
+              <button
+                type="submit"
+                class="btn btn-success btn-lg"
+                [disabled]="memberForm.form.invalid"
+              >
+                Add Gym Details
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

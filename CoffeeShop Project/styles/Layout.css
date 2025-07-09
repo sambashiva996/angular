@@ -1,0 +1,178 @@
+body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, sans-serif;
+}
+header{
+    font-weight: bold;
+}
+.headerlogo{
+    float: left;
+    margin-right: 10px;
+}
+.headerlogo > img{
+    height: 60px;
+    width: 60px;
+}
+#searchbox{
+    float: right;
+    padding: 5px;
+    margin: 10px 10px;
+    width: 200px;
+}
+#headername{
+    font-size: 40px;
+    padding: 15px;
+    margin: 8px 0px;
+    font-weight: bold;
+    color: #603813;
+}
+#welcomeimage{
+    float: left;
+    max-width: 100%;
+    height: auto;
+}
+#coffeeofthemonth{
+    float: right;
+    width: 500px;
+    
+}
+#welcometext {
+    float: left;
+    Width: 70%;
+    font-size: 12px;  
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    /* column-count: 2;
+    -webkit-column-count: 2; */
+    column-width: 200px;
+    column-gap: 40px;
+    }
+  
+    #welcometext > header { 
+    color: #603813; 
+    font-size:  
+    15px;  
+    font-weight:  
+    bold;   
+    margin-bottom: 3px;
+    }
+    #events {
+        float: right;
+        width: 30%;
+        margin-top: 20px;
+         margin-bottom: 20px;
+   }
+    #events > header {
+        margin-left: 10px;
+        color: #603813;
+        font-size: 15px;
+        margin-bottom: 3px;
+        font-weight: bold;
+   }
+    #events > ul {
+        list-style: none;
+   }
+    #events > ul > li {
+        margin-bottom: 3px;
+   }
+#bestsellers{
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.backgroundgradient{
+    background-color: #603813;
+}
+
+.productarticle{
+    display: table-cell;
+    width: 33%;
+    padding: 10px;
+}
+
+   
+   footer {
+    clear: both;
+    width: 100%;
+    margin: 20px 0px 20px;
+    background-color: #5c5045;
+    padding: 5px;
+}
+
+  nav ul {
+    display: flex; /* Makes the list horizontal */
+    list-style-type: none;
+    }
+
+
+
+  .navlink {
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    color: white; 
+  }
+
+  /* .navlink:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+  } */
+.blockheader{
+    font-weight: bold;
+    color: #603813;
+    font-size: 20px;
+    margin-bottom: 10px;
+}   
+#headername{
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 5px 5px 5px #f2955b;
+}
+.addtocartbutton{
+    background-color: #603813;
+    color: white;
+    border: none;
+    padding: 4px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 90px;
+}
+
+.videotag{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: large;
+}
+.productarticlecontent{
+    font-style: roboto, sans-serif;
+}
+.allcoffees{
+   float: left;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.productarticlewideprice{
+    color: rgb(9, 239, 24);
+}
+
+.textinput{
+    width: 200px;
+    flex: 1;
+    padding: 6px;
+}
+.textlable{
+    width: 200px;
+    font-weight: bold;
+    float: left;
+}
+
+
+   
