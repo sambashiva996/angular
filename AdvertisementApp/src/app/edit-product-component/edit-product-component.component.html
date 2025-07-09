@@ -1,0 +1,34 @@
+<div class="container mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card p-4 mb-4 shadow">
+        <h4 class="text-center mb-4">Edit Advertisement</h4>
+        <div class="mb-3">
+          <label class="form-label">Title</label>
+          <input class="form-control" [(ngModel)]="advertisement.title" placeholder="Title"/>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Name</label>
+          <input class="form-control" [(ngModel)]="advertisement.name" placeholder="Name"/>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Category</label>
+          <select class="form-select" [(ngModel)]="advertisement.category">
+            <option value="">Category</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Hardware">Hardware</option>
+            <option value="Mobile">Mobile</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Description</label>
+          <textarea class="form-control" [(ngModel)]="advertisement.description" placeholder="Description"></textarea>
+        </div>
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-primary" (click)="updateAd()">UPDATE</button>
+          <button class="btn btn-danger" (click)="cancelAd()">CANCEL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

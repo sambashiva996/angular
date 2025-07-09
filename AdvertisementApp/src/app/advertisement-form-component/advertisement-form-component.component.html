@@ -1,0 +1,83 @@
+<div class="container">
+<div class="row justify-content-center mt-5">
+  <div class="col-md-4">
+    <div class="card shadow">
+      <div class="card-header text-center">
+        <h2 class="mb-0">Advertisement Form</h2>
+      </div>
+      <div class="card-body">
+        <form #adevertiseForm="ngForm" (ngSubmit)="submitAdvertisement()">
+          <div class="mb-3">
+            <input
+              type="text"
+              id="title"
+              name="title"
+              required
+              [(ngModel)]="advertisement.title"
+              class="form-control"
+              placeholder="Title"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              [(ngModel)]="advertisement.name"
+              class="form-control"
+              placeholder="Name"
+            />
+          </div>
+          <div class="mb-3">
+            <select
+              id="category"
+              name="category"
+              required
+              [(ngModel)]="advertisement.category"
+              class="form-select"
+            >
+              <option value="" disabled selected>Category</option>
+              <option [value]="category" *ngFor="let category of category">{{category}}</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <textarea
+              id="description"
+              name="description"
+              [(ngModel)]="advertisement.description"
+              class="form-control"
+              placeholder="Description"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="d-grid">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              [disabled]="adevertiseForm.form.invalid"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="border m-2"></div>
+<app-advertisement-table-component [advertisementList]="advertisementList" (delete)="deleteAd($event)" (edit)="onEditAd($event)">
+
+    <div *ngIf="advertisementList.length === 0" class="text-center">
+        <h6>No advertisements submitted yet.</h6>
+    </div>
+
+    <div *ngIf="advertisementList.length > 0">
+        <h6 class="mb-3 text-center">Submitted Advertisements</h6>
+        <div class="search">
+            <input type="text" name="seachText" [(ngModel)]="seachText" placeholder="Search by title or name" class="search-box"/>
+        </div>
+    </div>
+</app-advertisement-table-component>
+
+</div>
